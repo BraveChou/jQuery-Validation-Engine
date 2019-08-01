@@ -1,5 +1,10 @@
-jQuery.validationEngine v2.6.2
+jQuery.validationEngine v3.0.0
 =====
+
+Looking for official contributors
+---
+This project has now been going on for more than 7 years, right now I only maintain the project through pull request contributions. However, I would love to have help improving the code quality and maintain an acceptable level of open issues.
+
 
 Summary
 ---
@@ -16,8 +21,8 @@ Bundled with many locales, the error prompts can be translated into the language
 
 Documentation :
 ---
-###[Nicer documention](http://posabsolute.github.com/jQuery-Validation-Engine/)
-###[Release Notes](http://posabsolute.github.com/jQuery-Validation-Engine/releases.html)
+### [Nicer documention](http://posabsolute.github.com/jQuery-Validation-Engine/)
+### [Release Notes](https://github.com/posabsolute/jQuery-Validation-Engine/releases)
  
 
 Demo :
@@ -30,6 +35,13 @@ Installation
 ---
 
 ### What's in the archive?
+
+Download
+
+[tar.gz 3.0.0](https://github.com/posabsolute/jQuery-Validation-Engine/archive/v3.0.0.tar.gz)
+or
+[zip 3.0.0](https://github.com/posabsolute/jQuery-Validation-Engine/archive/v3.0.0.zip)
+
 
 The archive holds, of course, the core library along with translations in different languages.
 It also comes with a set of demo pages and a simple ajax server (built in Java and php).
@@ -56,7 +68,7 @@ Usage
 First include jQuery on your page
 
 ```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/
 javascript"></script>
 ```
     
@@ -434,7 +446,7 @@ Speaks for itself, fails if the element has no value. This validator can apply t
 <input value="" class="validate[required]" type="text" name="email" id="email" />
 <input class="validate[required]" type="checkbox" id="agree" name="agree"/>
 
-<select name="sport" id="sport" class="validate[required]" id="sport">
+<select name="sport" class="validate[required]" id="sport">
    <option value="">Choose a sport</option>
    <option value="option1">Tennis</option>
    <option value="option2">Football</option>
@@ -653,7 +665,7 @@ You can see a tutorial that makes the use of php here: [http://www.position-abso
 ### Field ajax validation
 
 
-####Protocol
+#### Protocol
 
 The client sends the fieldId and the fieldValue as a GET request to the server url.
 
@@ -671,7 +683,7 @@ Server responds with an array: [fieldid, status, errorMsg].
 ### Form ajax validation
 
 
-####Protocol
+#### Protocol
 
 The client sends the form fields and values as a GET request to the form.action url.
 
@@ -687,13 +699,13 @@ Server responds with an *array of arrays*: [fieldid, status, errorMsg].
 
 Note that normally errors (status=false) are returned from the server. However you may also decide to return an entry with a status=true in which case the errorMsg will show as a green prompt.
 
-####Validation URL
+#### Validation URL
 By default the engine use the form action to validate the form, you can however set a default url using:
 
 **ajaxFormValidationURL
 
 
-####Callbacks
+#### Callbacks
 
 Since the form validation is asynchronously delegated to the form action, we provide two callback methods:
 
@@ -866,10 +878,10 @@ Contribution
 ---
 Contributions are always welcome, please follow these steps to submit your changes:
 
-1. Install git from [http://git-scm.com/]()
-2. Create a github account on [https://github.com]()
-3. Set up your git ssh key using these instructions [http://help.github.com/set-up-git-redirect]()
-4. Open the jQuery Validation Engine project home page on github on [https://github.com/posabsolute/jQuery-Validation-Engine]()
+1. Install git from [http://git-scm.com/](http://git-scm.com/)
+2. Create a github account on [https://github.com](https://github.com)
+3. Set up your git ssh key using these instructions [http://help.github.com/set-up-git-redirect](http://help.github.com/set-up-git-redirect)
+4. Open the jQuery Validation Engine project home page on github on [https://github.com/posabsolute/jQuery-Validation-Engine](https://github.com/posabsolute/jQuery-Validation-Engine)
 5. Click the "Fork" button, this will get you to a new page: your own copy of the code.
 6. Copy the SSH URL at the top of the page and clone the repository on your local machine
 
